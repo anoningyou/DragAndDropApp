@@ -1,0 +1,10 @@
+<div class="container"
+     cdkDropList
+     [cdkDropListData]="icons()"
+     cdkDropListSortingDisabled>
+    @for (icon of icons(); track icon) {
+    <app-icon [icon]="icon"
+              cdkDrag
+              [cdkDragData]="icon"></app-icon>
+    }
+</div>

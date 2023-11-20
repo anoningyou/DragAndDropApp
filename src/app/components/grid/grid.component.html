@@ -1,0 +1,11 @@
+<div class="container">
+    @for (item of gridService.items(); track item) {
+    <div class="grid-item"
+         cdkDropList
+         (cdkDropListDropped)="onDrop(item, $event)">
+        <app-icon class="item"
+                  *ngIf="!!item.icon"
+                  [icon]="item.icon"></app-icon>
+    </div>
+    }
+</div>

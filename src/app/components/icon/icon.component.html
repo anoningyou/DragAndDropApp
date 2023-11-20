@@ -1,0 +1,8 @@
+<div class="container">
+    <img class="icon"
+    *ngIf="!!icon"
+    [ngStyle]="{'max-width.px': width, 'max-height.px': height, }"
+     src="{{icon.path}}"
+     alt="icon">
+</div>
+
